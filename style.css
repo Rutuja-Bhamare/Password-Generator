@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 10px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /* background: linear-gradient(113deg, yellow 50%, #144dd5 50%);*/
+ background: conic-gradient(#00ffff,#ffff99,green);
+}
+   
+.container {
+    display: none;
+    position:fixed;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #9999ff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    min-height: 35rem;
+    margin-top:10px;
+    
+
+    
+}
+.title {
+    width: 71%;
+    text-align: center;
+    text-shadow: 0 0 3px blue;
+    color: white;
+
+}
+.desc-title {
+    font-size: 1.6rem;
+    text-align: left;
+    width: 71%;
+    border-bottom: 1px solid #144dd5;
+}
+.form {
+    display: grid;
+    grid-template-columns:auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+label{
+    font-weight: bold;
+    
+}
+.number-input {
+    width: 4rem;
+}
+.password {
+    background: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: 6rem;
+    width: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: 0.5rem;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    background: #144dd5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 50%;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    transition: opacity ease-in-out 0.2s;
+}
+.btnn {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border: none;
+    background: red;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 20%;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    transition: opacity ease-in-out 0.2s;
+    margin-bottom: 500px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
